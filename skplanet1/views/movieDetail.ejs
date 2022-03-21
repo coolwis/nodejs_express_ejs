@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>detail movie</h1> 
+        <div>
+            <ul>
+                <li>title:<%= movie.title %></li>
+                <li>director:<%= movie.director %></li>
+                <li>year:<%= movie.year %></li>
+            </ul>
+        </div>
+        <div>
+            <h3>review (<%= movie.reviews.length %>)</h3>
+            <ul>
+                <% for(var i=0; i< movie.reviews.length; i++) { %>
+                   <% var review = movie.reviews[i]  %>
+                   <li><%= review %></li> 
+                <% } %>   
+            </ul>
+
+            <form method="post" action="/movies/<%= movie.movieId %>">
+                <input type="text" name="review">
+                <input type="submit" value="입력">
+            </form>
+        </div>
+    </body>
+</html>

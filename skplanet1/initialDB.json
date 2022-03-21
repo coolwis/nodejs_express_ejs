@@ -1,0 +1,26 @@
+[
+    {
+        "movieId": 0,
+        "title": "Avata",
+        "director": "james",
+        "year":  2009,
+        "poster": "/images/1.jpg",
+        "reviews": []
+    },
+    {
+        "movieId": 1,
+        "title": "Starwars1",
+        "director": "조지 루카스",
+        "year":  1997,
+        "poster": "/images/2.jpg",
+        "reviews": []
+    },
+    {
+        "movieId": 2,
+        "title": "Starwars333",
+        "director": "조지 루카스333",
+        "year":  1997,
+        "poster": "/images/2.jpg",
+        "reviews": []
+    }
+]
